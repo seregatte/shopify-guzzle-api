@@ -1,0 +1,22 @@
+{
+    "name": "seregatte/ShopifyGuzzleApi",
+    "description": "A Wrapper using Guzzle for a Shopify API and compatible with Google AppEngine",
+    "license": "LGPL 3.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "João Paulo Seregatte Costa",
+            "email": "seregatte@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~5.0",
+        "php": ">=5.4.0",
+    },
+    "autoload": {
+        "psr-0": {
+            "seregatte\\ShopifyGuzzleApi": "library\/"
+        }
+    }
+}

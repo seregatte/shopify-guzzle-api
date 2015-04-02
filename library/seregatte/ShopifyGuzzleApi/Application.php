@@ -44,8 +44,8 @@ class Application {
 
 	function oauth_access_token(Client $client, $shared_secret , $code)
 	{
-		$url = "https://" . $this->_shopUrl . "/admin/oauth/access_token"
-		$client->post($url, array('client_id'=> $this->_apiKey , 'client_secret'=>$shared_secret, 'code'=>$code) )
+		$url = "https://" . $this->_shopUrl . "/admin/oauth/access_token";
+		$client->post($url, array('client_id'=> $this->_apiKey , 'client_secret'=>$shared_secret, 'code'=>$code) );
 	}
 
 	function legacy_token_to_oauth_token($shops_token, $shared_secret, $private_app=false)

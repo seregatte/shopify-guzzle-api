@@ -49,8 +49,9 @@ class Application {
 		$client = new \GuzzleHttp\Client($config);
 		$options['body'] = array('client_id'=> $this->_apiKey , 'client_secret'=>$shared_secret, 'code'=>$code);
 		$options['verify'] = False;
-		$request = $client->post($url, $options);
-		$postBody = $request->getBody();
+		$response = $client->post($url, $options);
+		$postBody = $response->json();
+		var_dump($postBody);
 		return $postBody['access_token'];
 	}
 

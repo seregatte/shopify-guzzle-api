@@ -1,6 +1,7 @@
 <?php
 
 namespace seregatte\ShopifyGuzzleApi;
+use Guzzle;
 
 class Application {
 
@@ -42,10 +43,15 @@ class Application {
 	}
 
 
-	function oauth_access_token(Client $client, $shared_secret , $code)
+	function oauth_access_token($shared_secret , $code)
 	{
 		$url = "https://" . $this->_shopUrl . "/admin/oauth/access_token";
-		$client->post($url, array('client_id'=> $this->_apiKey , 'client_secret'=>$shared_secret, 'code'=>$code) );
+		$client = new Guzzle\Client();
+		$options['body'] = array('client_id'=> $this->_apiKey , 'client_secret'=>$shared_secret, 'code'=>$code);
+		$options['verify'] = False;
+		$request = $client->post($url, $options);
+		$postBody = $request->getBody();
+		return $postBody['access_token'];
 	}
 
 	function legacy_token_to_oauth_token($shops_token, $shared_secret, $private_app=false)

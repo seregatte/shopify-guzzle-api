@@ -38,7 +38,7 @@ class Application {
 	{
 		$scopes = empty($scopes) ? '' : '&scope='.implode(',', $scopes);
 		$redirect_uri = empty($redirect_uri) ? '' : '&redirect_uri='.urlencode($redirect_uri);
-		return "https://" . $this->_shopUrl . "/admin/oauth/authorize?client_id=" . $this->_apiKey . "$scope$redirect_uri";
+		return "https://" . $this->_shopUrl . "/admin/oauth/authorize?client_id=" . $this->_apiKey . "$scopes$redirect_uri";
 	}
 
 

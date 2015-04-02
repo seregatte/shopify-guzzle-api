@@ -46,7 +46,8 @@ class Application {
 	function oauth_access_token($shared_secret , $code)
 	{
 		$url = "https://" . $this->_shopUrl . "/admin/oauth/access_token";
-		$client = new Guzzle\Client();
+		$config['defaults']['headers']['X-Shopify-Access-Token'] = $this->_apiKey;
+		$client = new GuzzleHttp\Client($config);
 		$options['body'] = array('client_id'=> $this->_apiKey , 'client_secret'=>$shared_secret, 'code'=>$code);
 		$options['verify'] = False;
 		$request = $client->post($url, $options);

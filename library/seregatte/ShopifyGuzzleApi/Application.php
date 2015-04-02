@@ -51,7 +51,6 @@ class Application {
 		$options['verify'] = False;
 		$response = $client->post($url, $options);
 		$postBody = $response->json();
-		var_dump($postBody);
 		return $postBody['access_token'];
 	}
 

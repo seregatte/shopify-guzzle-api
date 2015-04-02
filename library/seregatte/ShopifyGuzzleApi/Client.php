@@ -4,7 +4,7 @@ namespace seregatte\ShopifyGuzzleApi;
 
 use GuzzleHttp\Client;
 
-class Client extends Client
+class Client extends GuzzleHttp\Client
 {
 	
 	private $_shopify_token = NULL;

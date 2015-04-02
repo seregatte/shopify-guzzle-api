@@ -1,7 +1,6 @@
 <?php
 
 namespace seregatte\ShopifyGuzzleApi;
-use GuzzleHttp\Client;
 
 class Application {
 

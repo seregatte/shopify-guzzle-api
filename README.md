@@ -32,9 +32,9 @@ $client = new ShopifyGuzzleApi\Api(
 				$app_credential_secret
 		);
 
-$p = ['published_status'=>'published'];
+$queryParams = ['published_status'=>'published'];
 
-$response = $client->setParams($p)->get('/admin/products.json');
+$response = $client->setParams($queryParams)->get('/admin/products.json');
 
 $json = $response->json();
 

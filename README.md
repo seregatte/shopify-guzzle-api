@@ -9,7 +9,7 @@ What you need to do for get this library, is putting the following code into you
 
 ```
 "require": {
-     "seregatte/shopify-guzzle-api: "*",
+     "seregatte/shopify-guzzle-api: "dev-master",
 }
 ```
 

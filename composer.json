@@ -1,5 +1,5 @@
 {
-    "name": "seregatte/ShopifyGuzzleApi",
+    "name": "seregatte/shopify-guzzle-api",
     "description": "A Wrapper using Guzzle for a Shopify API and compatible with Google AppEngine",
     "license": "LGPL 3.0",
     "type": "library",

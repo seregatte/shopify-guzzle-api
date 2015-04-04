@@ -33,6 +33,6 @@ var_dump($json['products'])
 
 ### TODO
 
-Make a better documentation, with more examples.
-Cover the code with unit tests.
-Make a Skeleton App using this library.
+- Make a better documentation, with more examples.
+- Cover the code with unit tests.
+- Make a Skeleton App using this library.

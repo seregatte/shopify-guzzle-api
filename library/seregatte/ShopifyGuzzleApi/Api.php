@@ -41,7 +41,7 @@ class Api extends \GuzzleHttp\Client
 	{
 		$options = $this->setVerify($options);
         $options['query'] = $this->ApiParams;
-        $options->resetParams();
+        $this->resetParams();
 		return parent::get($url, $options);
 	}
 
@@ -49,7 +49,7 @@ class Api extends \GuzzleHttp\Client
     {
     	$options = $this->setVerify($options);
         $options['query'] = $this->ApiParams;
-        $options->resetParams();
+        $this->resetParams();
         return parent::delete($url, $options);
     }
 
@@ -57,7 +57,7 @@ class Api extends \GuzzleHttp\Client
     {
     	$options = $this->setVerify($options);
         $options['body'] = $this->ApiParams;
-        $options->resetParams();
+        $this->resetParams();
         return parent::put($url, $options);
     }
 
@@ -65,7 +65,7 @@ class Api extends \GuzzleHttp\Client
     {
     	$options = $this->setVerify($options);
         $options['body'] = $this->ApiParams;
-        $options->resetParams();
+        $this->resetParams();
         return parent::post($url, $options);
     }
 }

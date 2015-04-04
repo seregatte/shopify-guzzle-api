@@ -21,9 +21,9 @@ require_once __DIR__.'/vendor/autoload.php';
 use seregatte\ShopifyGuzzleApi;
 
 $shopId = 'shopname.myshopify.com';
-$shopToken = 'XXXXXXXXXXXXX';
-$app_api_key = 'XXXXXXXXXXXXX'; //App Api Key
-$app_credential_secret = 'XXXXXXXXXXXXXX'; //App Credential Sets
+$shopToken = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+$app_api_key = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; //App Api Key
+$app_credential_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; //App Credential Sets
 
 $client = new ShopifyGuzzleApi\Api(
 				$shopId, 

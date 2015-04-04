@@ -38,7 +38,7 @@ class Api extends \GuzzleHttp\Client
         return $options;		
 	}
 
-	public function get($url = null, array $options = [])
+	public function get($url = null, $options = [])
 	{
 		$options = $this->setVerify($options);
         $options['query'] = $this->ApiParams;

@@ -26,7 +26,9 @@ $app_api_key = 'XXXXXXXXXXXXX'; //App Api Key
 $app_credential_secret = 'XXXXXXXXXXXXXX'; //App Credential Sets
 
 $client = new ShopifyGuzzleApi\Api($shopId, $app_api_key, $shop-Token, $app_credential_secret);
-$response = $client->setParams(['published_status'=>'published'])->get('/admin/products.json');
+$response = $client
+				->setParams(['published_status'=>'published'])
+				->get('/admin/products.json');
 $json = $response->json();
 var_dump($json['products'])
 ```

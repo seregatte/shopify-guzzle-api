@@ -30,14 +30,11 @@ $client = new ShopifyGuzzleApi\Api(
 				$app_api_key, 
 				$shopToken, 
 				$app_credential_secret
-			);
+		);
 
-$response = $client
-				->setParams(
-					['published_status'=>'published'])
-				->get(
-					'/admin/products.json'
-				);
+$p = ['published_status'=>'published'];
+
+$response = $client->setParams($p)->get('/admin/products.json');
 
 $json = $response->json();
 

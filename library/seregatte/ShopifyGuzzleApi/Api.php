@@ -1,5 +1,4 @@
 <?php
-
 namespace seregatte\ShopifyGuzzleApi;
 
 class Api extends \GuzzleHttp\Client

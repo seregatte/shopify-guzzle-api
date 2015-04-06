@@ -1,8 +1,10 @@
 {
     "name": "seregatte/shopify-guzzle-api",
     "description": "A Wrapper using Guzzle for a Shopify API and compatible with Google AppEngine",
-    "license": "LGPL 3.0",
+    "license": "MIT",
     "type": "library",
+    "keywords": ["framework", "http", "rest", "web service", "curl", "client", "HTTP client"],
+    "homepage": "http://github.com/seregatte/shopify-guzzle-api/",
     "authors": [
         {
             "name": "João Paulo Seregatte Costa",
